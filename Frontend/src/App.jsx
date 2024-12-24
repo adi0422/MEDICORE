@@ -9,6 +9,8 @@ import MyProfile from './pages/myprofile'
 import MyAppointment from './pages/myappointment'
 import Appointement from './pages/Appointement'
 import Navbar from './components/Navbar'
+import Footer from './components/footer'
+
 const App = () => {
   return (
     <div className='mx-4 sm:mx-[10%]'>
@@ -26,6 +28,7 @@ const App = () => {
         <Route path="*" element={<div>Page Not Found</div>} />
 
       </Routes>
+      <Footer />
     </div>
   )
 }
