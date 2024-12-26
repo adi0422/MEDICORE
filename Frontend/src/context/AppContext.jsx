@@ -5,7 +5,8 @@ export const AppContext = createContext()
 
 const AppContextProvider = (props) => {
     console.log(doctors); // Log the doctors data to debug
-    const value = { doctors };
+    const currencySymbol = '$' // for doctor appoinment fees
+    const value = { doctors,currencySymbol };
     return (
       <AppContext.Provider value={value}>
         {props.children}
